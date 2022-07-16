@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- aos animation css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Shoe template!</title>
+</head>
+
+<body>
+
+    <div id="banner">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="normal">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="assets/logos/logo.png" alt=""></a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link"><b>HOME</b></a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link"><b>ABOUT US</b></a></li>
+                        <li class="nav-item"><a href="store.html" class="nav-link"><b>MY STORE</b></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><b>TRACK ORDER</b></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><b>FAQ</b></a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link"><b>CONTACT</b></a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal"
+                                data-bs-target="#modal"><i class="far fa-user"></i></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-search"></i></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-shopping-bag"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <div class="container">
+                <!-- <button style="border: none;" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#touch">
+                    <span><img src="assets/logo/icons8-menu-32.png" alt=""></span>
+                </button> -->
+                <img src="assets/logos/icons8-menu-32.png" alt="" data-bs-target="#touch" data-bs-toggle="offcanvas"
+                    class="navbar-toggler" style="border: none;">
+                <a href="#" class="navbar-brand m-auto"><img src="assets/logos/logo-black.png" alt="" width="100px"></a>
+                <div class="offcanvas offcanvas-start" id="touch">
+                    <div class="offcanvas-header">
+                        <a href="#" class="navbar-brand"><img src="assets/logos/logo-black.png" alt=""></a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>Boots</b></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>Flipflop</b></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>Floaters</b></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>Formal</b></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>Flats</b></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>Heels</b></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>Sports</b></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>Sandals</b></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>School</b></a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" style="color: grey;"><b>Casual
+                                        Shoes</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="box" class="p-2 text-end">
+                    <a href="#" class="p-1" style="text-decoration: none; color: black;"><i class="fa-solid fa-user"
+                            style="font-size: 1rem;"></i></a>
+                    <a href="#" class="p-1" style="text-decoration: none; color: black;"><i
+                            class="fa-solid fa-cart-shopping" style="font-size: 1rem;"></i></a>
+                    <a href="#" class="p-1" style="text-decoration: none; color: black;"><i class="fa-solid fa-heart"
+                            style="font-size: 1rem;"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ======== carousel -->
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container" id="shoe-slide">
+                        <div class="row mt-5">
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                <a href="#" class="animate__animated animate__backInLeft"><img
+                                        src="assets/logos/slideshow-img1.png"
+                                        class="d-block w-100 animate__animated animate__backInLeft" alt="..."></a>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                <p style="color: white; font-size: 1.8rem;">Women's Original</p>
+                                <h1 style="color: white; font-size: 4.5rem;"
+                                    class="animate__animated animate__jackInTheBox">Autumn Winters <br>Fashion</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container" id="shoe-slide">
+                        <div class="row mt-5">
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                <img src="assets/logos/slideshow-img1.png"
+                                    class="d-block w-100 animate__animated animate__backInLeft" alt="...">
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                <p style="color: white; font-size: 1.8rem;">2019 January</p>
+                                <h1 style="color: white; font-size: 4.5rem;"
+                                    class="animate__animated animate__jackInTheBox">New Spring <br>Collection</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- after banner section -->
+
+    <div id="box" style="overflow: hidden;">
+        <div class="row gx-0">
+            <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+                <div class="box-1">
+                    <p class="text-center" id="tone">Running Shoes</p>
+                    <h3 class="text-center" id="hone">Nike Just Do It</h3>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 col-md-12 col-sm-12">
+                <div class="box-2">
+                    <div class="text p-5">
+                        <h3 style="color: white;" id="htwo">The Benefits <br>Of Running</h3>
+                        <p class="text-white" style="font-size: 2rem;">Season Off 10 - 30%</p>
+                        <button class="btn btn-dark p-4">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="box" style="overflow: hidden;">
+        <div class="row gx-0">
+            <div class="col-12 col-lg-8 col-md-12 col-sm-12">
+                <div class="box-3">
+                    <div class="text text-end p-5">
+                        <h3 style="color: white;" id="htwo">The Benefits <br>Of Running</h3>
+                        <p class="text-white" style="font-size: 2rem;">Season Off 10 - 30%</p>
+                        <button class="btn btn-dark p-4">More Info</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+                <div class="box-4">
+                    <p class="text-center" id="tone">Best Sellers</p>
+                    <h3 class="text-center" id="hone">Addidas Shoes</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- new arrival -->
+
+    <div class="container mt-5 pb-5">
+        <h2 class="text-center"><b>New Arrival</b></h2>
+        <div class="row mt-3">
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 mt-3">
+                <div id="container">
+                    <a href="#"><img src="assets/products/product-1.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div id="info" class="mt-3">
+                    <span style="color: gray;">Men's Basketball Shoe</span>
+                    <span style="float: right;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <h6 class="mt-3"><b>Air Jordan XXXIII</b></h6>
+                    <h5 class="mt-3" style="color: red;">$115</h5>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 mt-3">
+                <div id="container">
+                    <a href="#"><img src="assets/products/product-v1-img2.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div id="info" class="mt-3">
+                    <span style="color: gray;">Men's Originals</span>
+                    <span style="float: right;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <h6 class="mt-3"><b>Yung-1 Shoes</b></h6>
+                    <h5 class="mt-3" style="color: red;">$120</h5>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 mt-3">
+                <div id="container">
+                    <a href="#"><img src="assets/products/product-v1-img3.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div id="info" class="mt-3">
+                    <span style="color: gray;">Classes</span>
+                    <span style="float: right;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <h6 class="mt-3"><b>Mobius OG</b></h6>
+                    <h5 class="mt-3" style="color: red;">$140</h5>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 mt-3">
+                <div id="container">
+                    <a href="#"><img src="assets/products/product-v1-img4.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div id="info" class="mt-3">
+                    <span style="color: gray;">Lifestyles</span>
+                    <span style="float: right;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <h6 class="mt-3"><b>Reebok Split Fuel</b></h6>
+                    <h5 class="mt-3" style="color: red;">$80</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- company brands -->
+
+    <div class="container mt-5 pb-5">
+        <marquee behavior="" direction="">
+            <img src="assets/logos/brand-v1-img1.png" alt="" class="p-5">
+            <img src="assets/logos/brand-v1-img2.png" alt="" class="p-5">
+            <img src="assets/logos/brand-v1-img3.png" alt="" class="p-5">
+            <img src="assets/logos/brand-v1-img4.png" alt="" class="p-5">
+            <img src="assets/logos/brand-v1-img5.png" alt="" class="p-5">
+            <img src="assets/logos/brand-v1-img1.png" alt="" class="p-5">
+            <img src="assets/logos/brand-v1-img2.png" alt="" class="p-5">
+            <img src="assets/logos/brand-v1-img3.png" alt="" class="p-5">
+            <img src="assets/logos/brand-v1-img4.png" alt="" class="p-5">
+            <img src="assets/logos/brand-v1-img5.png" alt="" class="p-5">
+        </marquee>
+    </div>
+
+    <!-- running sneaker banner -->
+
+    <div class="running">
+        <div class="container p-4">
+            <h1 id="running-text">Nike Announce The <br>Free FlyKnit</h1>
+            <p class="text-end text-white">Running sneakers</p>
+        </div>
+
+    </div>
+
+    <!--Deals of the weak  -->
+
+    <div class="container mt-5 pb-5">
+        <h2 class="text-center"><b>Deal Of The Week</b></h2>
+        <div class="row mt-5">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <p style="font-size: 2rem;">Hot Deal Week</p>
+                <h1 style="font-size: 3.5rem;">Crazy Byw Lvl X Pw</h1>
+                <span style="color: red; font-size: 3rem;"><b>$200</b></span>
+                <span style="font-size: 2.5rem; color: gray;" class="p-3">$200</span>
+
+                <p>Premium Materials Blandit parturient adipiscing faucibus fringilla vestibulum ultrices integer dolor
+                    parturient parturient at porta platea inceptos. Habitant dui ut fringilla eleifend tincidunt
+                    scelerisque porta a tortor...</p>
+
+                <!-- add to cart -->
+
+                <button class="btn" style="background-color: #ED2353; color: white;">ADD TO CART</button>
+                <i class="fa-solid fa-heart" style="color: #ED2353; border: 1px solid black; padding: 10px;"></i>
+                <i class="fa-solid fa-check" style="color: gray; border: 1px solid black; padding: 10px;"></i>
+
+                <!-- quarnteed cgeckout -->
+
+                <h5 class="mt-4">GUARANTEED SAFE CHECKOUT</h5>
+                <img src="assets/images/image_2020_12_21T04_28_17_333Z_480x.png" alt="" width="50%" class="mt-3">
+
+                <!-- order -->
+
+                <p class="mt-4"> <i class="fa-solid fa-truck fa-fade"></i> Order in the next 0 hours 30 minutes to get
+                    it between Monday, 4th April and Friday, 8th April</p>
+
+                <!-- Categories -->
+
+                <div class="cata">
+                    <p>Categories: <a href="#">Flower Crowns</a> , <a href="#">For Decoration</a> , <a href="#">Weeding
+                            Flowers</a></p>
+                    <p>Tags: <a href="#">Flower Store</a> , <a href="#">Perfect Bouquet</a></p>
+                </div>
+
+                <!-- social icons -->
+
+                <div class="social mt-4">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><a href=""><i
+                                class="fa-brands fa-facebook-f"></i></a></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><a href=""><i
+                                class="fa-brands fa-twitter"></i></a></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Email"><a href=""><i
+                                class="fa-solid fa-envelope"></i></a></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pinterest"><a href=""><i
+                                class="fa-brands fa-pinterest-p"></i></a></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tumblr"><a href=""><i
+                                class="fa-brands fa-tumblr"></i></a></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Telegram"><a href=""><i
+                                class="fa-brands fa-telegram"></i></a></button>
+                </div>
+
+                <!-- view more -->
+
+                <div class="view mt-5">
+                    <p><b><a href="#" style="text-decoration: none; color: black; font-size: 1.2rem;">View Full Details
+                                <i class="fa-solid fa-arrow-right"></i></a></b></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <img src="assets/products/countdown-v1-img.webp" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- shop now -->
+
+    <div id="shopnow">
+        <div class="row gx-0">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <div id="left">
+                    <div class="cont p-4 pt-5">
+                        <p>Men's Originals</p>
+                        <h1>EQT Cushion <br> ADV Shoes <span style="color: yellow;">$61</span></h1>
+                        <button class="btn btn-dark p-3 w-25 mt-3" style="border-radius: 50px;">Shop Now</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <div id="right">
+
+                    <div class="cont p-4 pt-5">
+                        <p>Women's Tank</p>
+                        <h1>Nike Pro <br> HyperCool</h1>
+                        <button class="btn btn-dark p-3 w-25 mt-3" style="border-radius: 50px;">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- newslatter -->
+
+    <div id="newslatter">
+        <div class="input text-center">
+            <h1><b>Newslatter</b></h1>
+            <input type="text" placeholder="E-mail" class="mt-3">
+            <br>
+            <button class="btn btn-dark mt-3 p-3" type="submit">SUBSCRIBE</button>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <div class="container-fluid bg-dark pb-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12" id="hover">
+                    <h3 class="text-white"><b>Contact</b></h3>
+                    <p style="color: gray;"><i class="fa-solid fa-house"></i> 1234 Heaven Stress, Beverly Hill.</p>
+                    <p style="color: gray;"><i class="fa-solid fa-phone"></i> Telephone: +01 234 567 89</p>
+                    <p style="color: gray;"><i class="fa-solid fa-envelope"></i> Email: <a
+                            href="#">engotheme@gmail.com</a></p>
+                    <p style="color: gray;"><i class="fa-solid fa-clock"></i> 8:00 - 19:00, Monday - Saturday</p>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12" id="hover">
+                    <h3 class="text-white"><b>My Account</b></h3>
+                    <p><a href="#">My Account</a></p>
+                    <p><a href="#">Login</a></p>
+                    <p><a href="#">My Cart</a></p>
+                    <p><a href="#">Wishlist</a></p>
+                    <p><a href="#">Checkout</a></p>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12" id="hover">
+                    <h3 class="text-white"><b>Information</b></h3>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="#">Careers</a></p>
+                    <p><a href="#">Delivery Inforamtion</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms & Conditions</a></p>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12" id="hover">
+                    <h3 class="text-white"><b>Custom Service</b></h3>
+                    <p><a href="#">Shipping Policy</a></p>
+                    <p><a href="#">Compensation First</a></p>
+                    <p><a href="#">My Account</a></p>
+                    <p><a href="#">Return Policy</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom footer -->
+
+    <div class="container-fluid p-4" style="background-color: black;">
+        <div class="container">
+            <div class="bootom">
+                <p class="text-center"><span style="color: grey;">Copyright © 2022 By Pushkar Protiya. All Rights
+                        Reserved.</span></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- aos script -->
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- aos javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

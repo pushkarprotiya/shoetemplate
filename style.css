@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner {
+    background-image: url(assets/banner/bg-slideshow-v1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#navbar {
+    display: none;
+}
+
+#shoe-slide {
+    margin-top: 10rem;
+}
+
+.box-1 {
+    background-image: url(assets/banner/banner-v1-img1.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-2 {
+    background-image: url(assets/banner/banner-v1-img2.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tone {
+    font-size: 2rem;
+    padding-top: 17.5rem;
+}
+
+#hone {
+    font-size: 4rem;
+}
+
+#htwo {
+    font-size: 5rem;
+    padding-top: 2.5rem;
+}
+
+.box-3 {
+    background-image: url(assets/banner/banner-v2-img2.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-4 {
+    background-image: url(assets/banner/banner-v2-img1.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    overflow: hidden;
+}
+
+#container img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.running {
+    background-image: url(assets/banner/banner-v3-img.jpg);
+    width: 100%;
+    height: 300px;
+}
+
+#running-text {
+    color: white;
+    text-align: end;
+    font-size: 4rem;
+}
+
+.cata a {
+    text-decoration: none;
+    color: black;
+}
+
+.cata a:hover {
+    color: #ED2353;
+    transition: 0.2s;
+}
+
+.social a i {
+    color: black;
+    padding: 13px;
+}
+
+.social a i:hover {
+    color: #ED2353;
+    transition: 0.2s;
+}
+
+.social button {
+    background: none;
+    border: none;
+}
+
+.hover a img:hover {
+    filter: drop-shadow(2px 3px 11px black);
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+#info p {
+    color: gray;
+}
+
+#info p a {
+    text-decoration: none;
+    color: grey;
+}
+
+#info p a:hover {
+    text-decoration: none;
+    color: #ED2353;
+}
+
+.social-2 button {
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+#shopnow {
+    overflow: hidden;
+}
+
+#left {
+    background-image: url(assets/card/banner-v3-img2.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+#right {
+    background-image: url(assets/card/banner-v3-img1.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+.cont p{
+    color: white;
+    font-size: 2.8rem;
+}
+.cont h1{
+    color: white;
+    font-size: 4.5rem;
+}
+#newslatter{
+    background-image: url(assets/card/bg-newsletter-v1.jpg);
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.input{
+    padding-top: 6rem;
+}
+.input input{
+    border: none;
+    border: 1px solid grey;
+    border-radius: 50px;
+    width: 30%;
+    padding: 0.8rem;
+}
+.input button{
+    width: 30%;
+    border-radius: 50px;
+}
+#hover p a{
+    text-decoration: none;
+    color: gray;
+}
+#hover p a:hover{
+    color: yellow;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 424px) {
+    #navbar {
+        display: block;
+    }
+
+    #normal {
+        display: none;
+    }
+
+    #shoe-slide {
+        margin-top: 5rem;
+    }
+
+    #banner {
+        height: 100vh;
+    }
+
+    #hone {
+        font-size: 2.8rem;
+    }
+
+    #htwo {
+        font-size: 3rem;
+    }
+
+    #running-text {
+        color: white;
+        text-align: start;
+        font-size: 2rem;
+        margin-top: 2.5rem;
+    }
+    .cont p{
+        color: white;
+        font-size: 2rem;
+    }
+    .cont h1{
+        color: white;
+        font-size: 2.5rem;
+    }
+    #left{
+        height: 400px;
+    }
+    #right{
+        height: 400px;
+    }
+    .input input{
+        border: none;
+        border: 1px solid grey;
+        border-radius: 50px;
+        width: 100%;
+        padding: 0.8rem;
+    }
+    .input button{
+        width: 100%;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #navbar {
+        display: block;
+    }
+
+    #normal {
+        display: none;
+    }
+
+}
